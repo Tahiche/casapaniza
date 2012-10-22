@@ -13,3 +13,18 @@ body, p {
 	color: #727272;
 	overflow: none;
 }
+
+body {
+background: #FFF;
+background-image:url(images/fondos/fondo_degrad.gif);
+background-repeat:repeat-x;
+}
+
+#page {
+background: #FFF;
+width:845px;
+max-width: 1000px;
+background-image:url(images/fondos/fondo_tela.jpg);
+background-repeat: no-repeat;
+margin:0 auto;
+}
