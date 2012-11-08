@@ -6,11 +6,15 @@ Template: twentyeleven
 */
 
 @import url("../twentyeleven/style.css");
-body, p {
-	font-family:Arial, Helvetica, sans-serif;
+html{
+	height:100%;
+	}
+body, p, input, textarea  {
+	/*font-family:"Minion Pro", Times, "Times New Roman", serif;*/
+	font-family: Times, "Times New Roman", serif;
 	font-size: 12px;
 	height: 100%;
-	color: #727272;
+	color: #333;
 	overflow: none;
 }
 
@@ -18,13 +22,173 @@ body {
 background: #FFF;
 background-image:url(images/fondos/fondo_degrad.gif);
 background-repeat:repeat-x;
+height: 100%;
 }
+h1{
+	font-weight:bold;
+	font-size:18px;
+	color:#000;
+	margin-bottom:20px;
+	}
+	
+h2{
+	font-weight:bold;
+	font-size:16px;
+	color:#000;
+	}
 
 #page {
 background: #FFF;
 width:845px;
 max-width: 1000px;
-background-image:url(images/fondos/fondo_tela.jpg);
+background-image:url(images/fondos/fondo_plato.jpg); 
 background-repeat: no-repeat;
 margin:0 auto;
+height: 100%;
+min-height:650px;
+}
+#site-title span a{
+text-indent: -300px;
+overflow: hidden;
+width: 201px;
+height: 74px;
+background-image: url(images/logo.png);
+display: block;
+	}
+h2#site-description{
+	display:none;
+	}
+#primary{
+	float:none;
+	}
+
+#content-home{
+	text-align: center;
+	margin-top:140px;
+	}
+#primary #content{
+	width: 410px;
+margin: 0 auto;
+margin-top: 40px;
+text-align: center;
+}
+.textoclaro, .textoclaro p{
+font-size: 13px;
+color: #666;
+line-height: 120%;
+/*letter-spacing:1em;*/
+	}
+#menu_lista{
+	line-height:  1.2em;
+	margin-top:15px;
+	}
+#menu_lista strong, #menu_lista b{
+	font-size: 13px;
+	}
+#flor{
+	margin-top:20px;
+	}
+#fecha_text{
+	font-size: 14px;
+	font-weight:bold;
+	}
+.boldermenu{
+	font-weight:bold;
+	font-size:14px;
+	margin-top:5px;
+	line-height: 2em;
+	}
+.menu_concertado{
+	margin-top:40px !important;
+	}
+/* PDF */
+.dIW2 {
+margin-bottom: -10px !important;
+margin-top: -20px;
+}
+.dI {
+width: 120px !important;
+height: 120px !important;
+margin: 0 auto -30px !important;
+float:none !important;
+}
+.dItitle {
+font-size: 12px !important;
+}
+
+#nav-single {
+float: none;
+position: relative;
+top: -0.3em;
+text-align: right;
+z-index: 1;
+}
+
+/****************** menu *************/
+#branding hgroup {
+margin: 0 7.6%;
+float: left;
+}
+
+#access {
+/*background-image:url(images/menu/fondomenu2.png);
+box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 2px 1px;*/
+clear: none;
+display: block;
+float: right;
+margin: 30px 40px -40px 0;
+width: 128px !important;
+}
+#postnav{
+	background: url(images/menu/botmenufondo.png) no-repeat;
+	height:12px;
+	}
+.menu-primario-container{
+background: url(images/menu/topmenufondo.png) no-repeat;
+padding-top: 12px;
+}
+#access div {
+margin: 0;
+}
+#access ul {
+font-size: 13px;
+list-style: none;
+margin: 0;
+padding-left: 0;
+padding: 0;
+background-image:url(images/menu/fondonormal.jpg);
+}
+#access li {
+float: none;
+position: relative;
+background-image:url(images/menu/fondonormal.jpg);
+text-align:center;
+height:50px;
+border-bottom:1px dashed #37466F;
+
+}
+#access li.current-menu-item{
+background-image:url(images/menu/fondoselected.jpg); 
+	}
+#access li:hover > a, #access a:focus {
+background-image:url(images/menu/fondonormal.jpg);
+text-decoration:underline;
+color:#37466F;
+}
+
+#access li.current-menu-item:hover > a {
+background-image:url(images/menu/fondoselected.jpg); 
+text-decoration:underline;
+color:#37466F;
+}
+
+#access a {
+color:#37466F;
+display: block;
+line-height: 1em;
+padding: 0 1.2125em;
+text-decoration: none;
+padding:15px 5px;
+text-align:center;
+font-weight:bold;
 }
