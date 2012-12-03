@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The template for displaying all pages.
@@ -14,6 +15,7 @@
 
 get_header();  
 ?> 
+<?php edit_post_link("Editar menú"); ?> 
 
 <div id="primary">
 			<div id="content" role="main" class="menu_concertado">
@@ -28,10 +30,12 @@ get_header();
 					</nav><!-- #nav-single -->
                     
                     
-<h1>"Celebraciones y comidas de empresa"</h1>
+<!-- <h1>"Celebraciones y comidas de empresa"</h1> -->
 <h2><?php //get_template_part( 'content', $post->post_name ); 
 					the_title();
 					?>  </h2>
+                                   
+
 
 			  <?php while ( have_posts() ) : the_post(); ?>
               <div id="menu_lista">
@@ -43,6 +47,8 @@ get_header();
 
 				<?php endwhile; // end of the loop. ?>
 
+<?php global $post;?>
+<div id="mas_info"><a href="javascript:void(0);" onclick="acg_lbcf_pop(<?php echo $post->ID; ?>);">Solicitar Información</a></div>
 <div id="flor">
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/flor_decor.png" width="35" height="30" alt="Flor Casapaniza" />
 </div>

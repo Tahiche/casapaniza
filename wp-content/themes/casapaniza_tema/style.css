@@ -26,15 +26,15 @@ height: 100%;
 }
 h1{
 	font-weight:bold;
-	font-size:18px;
-	color:#000;
-	margin-bottom:20px;
+	font-size:20px;
+	color:#414D74;
+	margin-bottom:0px;
 	}
 	
 h2{
 	font-weight:bold;
 	font-size:16px;
-	color:#000;
+	color:#414D74;
 	}
 
 #page {
@@ -46,7 +46,59 @@ background-repeat: no-repeat;
 margin:0 auto;
 height: 100%;
 min-height:650px;
+position:relative;
 }
+
+a.post-edit-link{
+	background-color:#003;
+	color:#FFF;
+	position:fixed;
+	right:0;
+	top:20px;
+	padding:10px;
+	}
+
+/************ logo **  title *************/
+#branding hgroup {
+margin: 0 40px;
+float: left;
+height: 165px;
+}
+
+#site-title {
+margin-right: 270px;
+padding: 20px 0 0;
+margin-bottom: 0;
+}
+#branding img {
+height: auto;
+margin-bottom: -7px;
+width:auto;
+}
+
+/*************** footer *************/
+#footer_blue{
+background-color: #3B435E;
+padding: 5px 10px;
+color: white;
+width: 805px;
+margin: 0px auto;
+border-top: 2px solid white;
+	}
+#adminlink{
+	float:right;
+	color:#006;
+	}
+
+/***** contacto ************/
+#contact_f{
+	font-weight: bold;
+text-decoration: underline;
+margin-top: -10px;
+margin-bottom: 10px;
+	}
+
+
 #site-title span a{
 text-indent: -300px;
 overflow: hidden;
@@ -64,7 +116,27 @@ h2#site-description{
 
 #content-home{
 	text-align: center;
-	margin-top:140px;
+	margin-top: -40px;
+	
+	}
+#content-home #content{
+	font-size:14px;
+	}
+#imghome{
+	width:845px;
+	height:500px;
+	display:block;
+	overflow:hidden;
+	position: absolute;
+left: 0px;
+	}
+#imghome img{
+	width:845px;
+	height:500px;
+	left:0;
+	}
+#copyright{
+	font-size:10px;
 	}
 #primary #content{
 	width: 410px;
@@ -78,17 +150,27 @@ color: #666;
 line-height: 120%;
 /*letter-spacing:1em;*/
 	}
+a.link_oblique{
+	font-style:oblique;
+	color:#37466F;
+	font-weight:bold;
+}
 #menu_lista{
 	line-height:  1.2em;
 	margin-top:15px;
+	}
+#menu_lista h2{
+	font-size: 14px;
+	font-weight:bold;
+	margin-bottom: 20px;
 	}
 #menu_lista strong, #menu_lista b{
 	font-size: 13px;
 	}
 #flor{
-	margin-top:20px;
+	margin-top:5px;
 	}
-#fecha_text{
+#fecha_text, {
 	font-size: 14px;
 	font-weight:bold;
 	}
@@ -99,7 +181,23 @@ line-height: 120%;
 	line-height: 2em;
 	}
 .menu_concertado{
-	margin-top:40px !important;
+	margin-top:10px !important;
+	}
+/* menus*/
+
+#primary #content.p_menus{
+	margin-top:100px;
+	}
+#lista_menus h2{
+	margin-top:10px;
+	font-size:18px;
+	}
+#lista_menus h2 a{
+	color:#37466F;
+	font-weight:bold;
+	}
+	
+#lista_menus  #flor{
 	}
 /* PDF */
 .dIW2 {
@@ -123,21 +221,22 @@ top: -0.3em;
 text-align: right;
 z-index: 1;
 }
-
+#content nav {
+clear: both;
+overflow: hidden;
+padding: 0;
+} 
 /****************** menu *************/
-#branding hgroup {
-margin: 0 7.6%;
-float: left;
-}
 
+/*************************** menu nav *******************/
 #access {
-/*background-image:url(images/menu/fondomenu2.png);
-box-shadow: rgba(0, 0, 0, 0.2) 2px 3px 2px 1px;*/
 clear: none;
-display: block;
-float: right;
-margin: 30px 40px -40px 0;
+position: absolute;
+margin: 10px 40px -40px 0;
 width: 128px !important;
+right: 0;
+z-index: 10;
+
 }
 #postnav{
 	background: url(images/menu/botmenufondo.png) no-repeat;
@@ -167,8 +266,12 @@ height:50px;
 border-bottom:1px dashed #37466F;
 
 }
-#access li.current-menu-item{
+#access li.current-menu-item, #access li.current-menu-parent, #access li.current_page_parent, #access li.current_page_ancestor{
 background-image:url(images/menu/fondoselected.jpg); 
+	}
+#access ul.sub-menu{
+	display:none;
+	visibility:hidden;
 	}
 #access li:hover > a, #access a:focus {
 background-image:url(images/menu/fondonormal.jpg);
@@ -176,7 +279,7 @@ text-decoration:underline;
 color:#37466F;
 }
 
-#access li.current-menu-item:hover > a {
+#access li.current-menu-item:hover > a , #access li.current-menu-parent > a {
 background-image:url(images/menu/fondoselected.jpg); 
 text-decoration:underline;
 color:#37466F;
@@ -191,4 +294,95 @@ text-decoration: none;
 padding:15px 5px;
 text-align:center;
 font-weight:bold;
+}
+
+img{
+	border:none !important;
+	}
+/************** carta *************/
+#content.pagecarta{
+	}
+	
+#content.pagecarta p{
+line-height: 1.3em;
+	}
+#cartas_pdf {
+margin-top: -40px;
+display: inline-block;
+	}
+
+#cartas_pdf .dI{
+display: inline-block;
+width: 140px !important;
+	}
+
+.dI .dItitle {
+word-wrap: break-word;
+display: block;
+padding: 3px; 
+background: transparent;
+line-height: 15px;
+/*color: #9;*/
+/*font-weight: bold;*/
+font-size: 9px;
+/*text-shadow: 0 1px 0 white;*/
+position: relative;
+border: 0;
+margin: 0 10px;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+border-radius: 8px;
+}
+
+.shadow, .galleryview .panel  {
+-webkit-box-shadow: 3px 3px 5px rgba(50, 50, 50, 0.7);
+-moz-box-shadow:    3px 3px 5px rgba(50, 50, 50, 0.7);
+box-shadow:         3px 3px 5px rgba(50, 50, 50, 0.7);
+}
+img[class*="wp-image-"]{
+	padding:0;
+	margin:0 6px;
+	}
+	/**** paginas interiores especificas ****/
+hr{
+border-top: 1px dotted #414D74;
+  color: #fff;
+  height: 1px;
+  width:50%;
+	}
+.content-otros-servicios, .content-contacto{
+	width: 440px !important;
+	margin-top:20px !important;
+	}	
+.content-otros-servicios h1, .content-contacto h1{
+	margin-bottom:0;
+	}
+
+.content-otros-servicios b, .content-contacto b, .content-contacto strong, .content-otros-servicios strong{
+	color:#414D74;
+	font-size:15px;
+	display: inline-block;
+margin-top: 15px;
+	}
+.content-contacto strong{
+margin-top: 0px;
+	}
+/************* gallery **************/
+#links_panoramica{
+display: inline-block;
+font-weight: bold;
+background-color: white;
+width: 100%;
+	}
+#primary #content.content-galeria-de-imagenes{
+	margin-top:-20px;
+	}
+.galleryview .panel img{
+	display:block;
+	}
+
+.nav-next {
+float: right;
+text-align: right;
+width: auto;
 }

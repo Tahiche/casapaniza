@@ -14,12 +14,12 @@
 
 get_header(); 
 ?> 
-
+<?php edit_post_link("Editar menú"); ?> 
 <div id="primary">
 			<div id="content" role="main" class="menu_dia">
 <div id="text_intro" class="textoclaro">
 Casa Paniza les ofrece dos ambientes diferentes para degustar nuestros
-menus diarios, menus concertados (para grupos), o bien nuestra carta
+menus diarios, <a href="/celebraciones-y-eventos/" class="link_oblique">menus concertados</a> (para grupos), o bien nuestra <a href="/carta/" class="link_oblique">carta</a>
 especializada con el mejor género de la cocina típica de Teruel.
 </div>
 <div id="flor">
@@ -28,12 +28,14 @@ especializada con el mejor género de la cocina típica de Teruel.
 <div id="fecha_text">
 <?php
 $fecha = time();
-echo FechaFormateada($fecha);
+//echo FechaFormateada($fecha);
+//$slug = basename(get_permalink());
 ?>
 </div>
 
 			  <?php while ( have_posts() ) : the_post(); ?>
               <div id="menu_lista">
+              <h2><?php the_title(); ?></h2>
 					<?php //get_template_part( 'content', $post->post_name ); 
 					the_content();
 					?>  

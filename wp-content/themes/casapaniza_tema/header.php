@@ -73,19 +73,29 @@
 			<hgroup>
 				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
 				<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+              <?php 
+			  //echo "XXXXX  ".$wp_query->queried_object_id;
+			  if ($wp_query->queried_object_id != 4):
+			  ?>
+                <div id="logo_img"><img width="201px" height="141px" src="<?php bloginfo('stylesheet_directory'); ?>/images/figura_logo.png" alt="Logo Casapaniza" /></div>
+                <?php endif; ?>
 			</hgroup>
 
 			
 
-		<?php //get_search_form(); ?>
 			
 			
-			<nav id="access" role="navigation">
+	</header><!-- #branding -->
+
+<nav id="access" role="navigation">
             <div id="prenav"></div>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
             <div id="postnav"></div>
 			</nav><!-- #access -->
-	</header><!-- #branding -->
+            
+	<div id="main"> 
 
-
-	<div id="main">
+		<?php //get_search_form();
+		if(isset($_GET['d'])) d(($wp_query));
+		 ?>
+			

@@ -1,0 +1,90 @@
+.acg_lbcf {
+	position: relative;
+	border: 1px solid #bbb;
+	margin: 30px 20px 0 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.acg_lbcf h1 {
+	color: #444;
+	padding: 10px 0 10px 20px;
+	margin-top: 0;
+	font-size: 18pt;
+	font-family: Georgia, Times, Serif;
+	font-style: italic;
+	background-color: #bbb;
+}
+
+.acg_lbcf a.instructions {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	display: block;
+	width: 100px;
+	text-align: center;
+	font-size: 8pt;
+	text-decoration: none;
+	background-color: #ffc;
+	border: 1px solid #444;
+	color: #444;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	font-weight: bold;
+}
+
+.acg_lbcf a.instructions:hover {
+	background-color: #ff6;
+}
+
+.acg_lbcf hr {
+	margin: 10px 20px;
+	padding: 0;
+	background-color: #bbb;
+	color: #bbb;
+}
+
+.acg_lbcf h4 {
+	color: #444;
+	padding: 0 0 0 20px;
+	margin-top: 0;
+	font-size: 14pt;
+	font-family: Georgia, Times, Serif;
+	font-style: italic;
+}
+
+.acg_lbcf div {
+	clear: left;
+	float: none;
+	padding: 5px;
+}
+
+.acg_lbcf label {
+	float: left;
+	width: 120px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.acg_lbcf textarea.style, .acg_lbcf div input.button {
+	margin-left: 130px;
+}
+
+.acg_lbcf div input.text {
+	width: 200px;
+}
+
+.acg_lbcf ol {
+	margin-left: 80px;
+	width: 500px;
+}
+
+.acg_lbcf ol li {
+	margin-bottom: 20px;
+}
+
+.acg_lbcf p {
+	margin-left: 50px;
+}

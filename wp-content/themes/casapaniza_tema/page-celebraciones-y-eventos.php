@@ -17,7 +17,7 @@ get_header();
 
 <div id="primary">
 			<div id="content" role="main" class="menu_dia">
-           <?php   echo  get_attachment_icons(); ?>
+           <?php   echo  get_all_added_attachment_icons();  ?>
 <div id="flor">
 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/flor_decor.png" width="35" height="30" alt="Flor Casapaniza" />
 </div>
@@ -37,9 +37,11 @@ get_header();
               <div id="menu_lista">
 					<?php //get_template_part( 'content', $post->post_name ); 
 					$args = array(
-              'post_type' => 'menu_concertado'
+              'post_type' => 'menu_concertado',
+			  'showposts'=>10
 			  );
 					$posts = get_posts($args);
+					//d($posts);
 foreach ($posts as $post)
     {
 		//d($post);

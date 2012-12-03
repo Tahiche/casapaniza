@@ -77,7 +77,7 @@ function get_all_added_attachment_icons( ) {
 				//d($files);
 				
 				
-								foreach ($files as $file) //setup array for more than one file attachment
+								foreach ($files as $num=>$file) //setup array for more than one file attachment
 												{
 												$fhh = $opts['fhh'];
 												$fhw = $opts['fhw'];
@@ -102,7 +102,7 @@ function get_all_added_attachment_icons( ) {
 																$aa_string .= "<a style='font-weight:bold;text-decoration:none;' href='$file_link' $target><span class='ikon kaydet'></span>" . $file->post_title . "</a> ";
 																$aa_string .= "</li>";
 												} else {
-																$aa_string .= "<div class='dI' id='$file->ID'>";
+																$aa_string .= "<div class='dI attchnum$num' id='$file->ID'>";
 																$aa_string .= "<a href='$file_link' $target>";
 																$aa_string .= "<img src='$urlp/images/mime/" . $file_post_mime . ".png' width='$fhw' height='$fhh'/>";
 																$aa_string .= "</a>";
